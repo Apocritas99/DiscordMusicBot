@@ -1,11 +1,7 @@
 const Discord = require('discord.js');
-const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database("./mybotdata.sqlite");
 const config = require ("./config.json")
-const got = require('got');
 const ytdl = require('ytdl-core');
 const fs = require('fs')
-require('dotenv').config();
 const { readdirSync } = require('fs');
 const { join } = require('path');
 const MusicClient = require('./struct/Client');
